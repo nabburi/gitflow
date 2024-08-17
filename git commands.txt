@@ -24,3 +24,24 @@ GIT Tags:
 GIT Branches:
 (A git branch is a git tag that can move)( a branch is pointer to a commit that can move  based on acctions you take)
 deleteing the barnch doesn't delete all the commits, it's jut delets the specific pointer 
+
+##observe current branch
+git branch
+
+##create new branch
+git checkout -b development
+
+##commit
+git add <filename>
+git commit -m "this is the"
+
+##observe the location of your new branch in the tree
+git log --online --graph -all --decorate
+
+##delte your branch
+git branch -d <branchname>
+##Force delete branch
+git branch -D <branchname>
+
+##restore branch
+git checkout -b <branchname> <commit sha1>
